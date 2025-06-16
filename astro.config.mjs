@@ -12,9 +12,14 @@ export default defineConfig({
       title: "🐙 Ctulhu Team",
       social: [
         {
+          icon: "seti:liquid",
+          label: "Boosty",
+          href: "https://boosty.to/ctulhu-vpn",
+        },
+        {
           icon: "github",
           label: "GitHub",
-          href: "https://github.com/withastro/starlight",
+          href: "https://github.com/ctulhu-vpn/web-app",
         },
       ],
       sidebar: [
