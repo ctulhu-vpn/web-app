@@ -1,0 +1,12 @@
+version: "3.8"
+services:
+  web-app:
+    container_name: web-app-dev
+    build: .
+    ports:
+      - "4321:4321"
+    volumes:
+      - ./src/:/usr/src/app/src
+      - ./public/:/usr/src/app/public
+      - ./astro.config.mjs:/usr/src/app/astro.config.mjs
+    command: npm run dev
