@@ -6,14 +6,27 @@ tableOfContents: false
 ---
 
 import { Card, CardGrid } from "@astrojs/starlight/components"
+import IconLinkCard from "../../components/IconLinkCard.astro"
+
+Добро пожаловать!<br />
+Здесь мы собрали инструкции и руководства.
 
 ## Инструкции
 
 <CardGrid>
-  <Card title="Windows" icon="seti:windows">
-    Инструкция для Windows 11
-  </Card>
-  <Card title="MacOS" icon="apple">
+  <IconLinkCard href="/install/android" title="Android" icon="android">
+    Инструкция для Android.
+  </IconLinkCard>
+  <IconLinkCard href="/install/ios" title="iOS" icon="ios">
+    Инструкция для iOS 18 +
+  </IconLinkCard>
+  <IconLinkCard href="/install/linux" title="Linux" icon="linux">
+    Инструкция для Ubuntu/Debian.
+  </IconLinkCard>
+  <IconLinkCard href="/install/macos" title="MacOS" icon="apple">
     Инструкция для MacOS 14.6 +
-  </Card>
+  </IconLinkCard>
+  <IconLinkCard href="/install/windows" title="Windows" icon="seti:windows">
+    Инструкция для Windows 11.
+  </IconLinkCard>
 </CardGrid>
