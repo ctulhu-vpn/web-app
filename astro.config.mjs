@@ -24,7 +24,7 @@ export default defineConfig({
       ],
       sidebar: [
         {
-          label: "Install",
+          label: "Установка",
           autogenerate: { directory: "install" },
         },
       ],
@@ -32,6 +32,13 @@ export default defineConfig({
         // Relative path to your custom CSS file
         "./src/styles/custom.css",
       ],
+      defaultLocale: "root",
+      locales: {
+        root: {
+          label: "Русский",
+          lang: "ru",
+        },
+      },
     }),
   ],
 })
