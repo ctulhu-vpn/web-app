@@ -9,7 +9,7 @@ export default defineConfig({
   },
   integrations: [
     starlight({
-      title: "My Docs",
+      title: "🐙 Ctulhu Team",
       social: [
         {
           icon: "github",
@@ -22,14 +22,10 @@ export default defineConfig({
           label: "Install",
           autogenerate: { directory: "install" },
         },
-        {
-          label: "Guides",
-          items: [{ label: "Example Guide", slug: "guides/example" }],
-        },
-        {
-          label: "Reference",
-          autogenerate: { directory: "reference" },
-        },
+      ],
+      customCss: [
+        // Relative path to your custom CSS file
+        "./src/styles/custom.css",
       ],
     }),
   ],
