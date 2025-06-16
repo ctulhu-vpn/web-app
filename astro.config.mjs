@@ -28,10 +28,7 @@ export default defineConfig({
           autogenerate: { directory: "install" },
         },
       ],
-      customCss: [
-        // Relative path to your custom CSS file
-        "./src/styles/custom.css",
-      ],
+      customCss: ["./src/styles/markdown.css"],
       defaultLocale: "root",
       locales: {
         root: {
